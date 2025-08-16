@@ -1,11 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning • Training • Consultancy</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, World! 🌍</h1>
-  <p>This is my first website hosted on GitHub Pages.</p>
+  <header>
+    <h1>Learning • Training • Consultancy</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>We help teams level up.</h2>
+      <p>Professional training, hands-on workshops, and advisory.</p>
+    </section>
+
+    <section id="services">
+      <h3>Services</h3>
+      <ul>
+        <li>Corporate Training</li>
+        <li>1:1 Coaching</li>
+        <li>Process & Security Consulting</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: you@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Your Company
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
 </body>
 </html>
